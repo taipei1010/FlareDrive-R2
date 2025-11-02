@@ -595,11 +595,10 @@ export default {
             : url.searchParams.delete("p");
           window.history.pushState(null, "", url.toString());
         }
-        document.title = this.cwd === "/" || this.cwd === "" 
-    ? "小舅子" 
-    : `${this.cwd.replace(/^\//, "").replace(/\/$/, "") || "/"} - 我的网盘文件库`;
-      immediate: true,
-    },
+        document.title = this.cwd.replace(/.*\/(?!$)|\//g, "") === "小舅子" 
+            ? "小舅子"
+            :`${this.cwd.replace(/.*\/(?!$)|\//g, "") || "/" } - 我的网盘文件库`;
+      },
   },
 
   created() {
