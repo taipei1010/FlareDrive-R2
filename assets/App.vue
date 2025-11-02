@@ -596,9 +596,11 @@ export default {
           window.history.pushState(null, "", url.toString());
         }
         document.title = this.cwd.replace(/.*\/(?!$)|\//g, "") === "/" 
-            ? "小舅子"
+            ? "小舅子 - 我的网盘文件库"
             :`${this.cwd.replace(/.*\/(?!$)|\//g, "") || "/" } - 我的网盘文件库`;
       },
+      immediate: true,
+    },
   },
 
   created() {
