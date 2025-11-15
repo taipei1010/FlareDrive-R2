@@ -596,8 +596,8 @@ export default {
           window.history.pushState(null, "", url.toString());
         }
         document.title = this.cwd.replace(/.*\/(?!$)|\//g, "") === "/" 
-            ? "小舅子 - 我的网盘文件库"
-            :`${this.cwd.replace(/.*\/(?!$)|\//g, "") || "/" } - 我的网盘文件库`;
+            ? "小舅子 - 我们的网盘图库"
+            :`${this.cwd.replace(/.*\/(?!$)|\//g, "") || "/" } - 我们的网盘图库`;
       },
       immediate: true,
     },
