@@ -19,7 +19,7 @@
       访问次数：<span id="vercount_value_site_pv">😯</span>次 | 访客人数：<span id="vercount_value_site_uv">😯</span>人
     </div>
 
-    <div style="margin:10px 0;">© 2025 show.xiaojiuzi.show. All rights reserved.</div>
+    <div style="margin:10px 0;">© 2025 xiaojiuzi.com. All rights reserved.</div>
   </footer>
 </template>
 
